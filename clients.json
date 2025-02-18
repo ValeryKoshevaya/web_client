@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1739917546326,
+    "name": "Пінкі Пай",
+    "email": "pincki@gmail.com",
+    "password": "12345678",
+    "phone": "0689397292",
+    "dob": "2004-09-12",
+    "gender": "female",
+    "country": "Україна",
+    "photo": "uploads\\1739917546323.png",
+    "agreement": false,
+    "result_test": "done",
+    "result_game": "done"
+  }
+]

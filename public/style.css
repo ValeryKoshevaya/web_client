@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3c4f7, #e1bee7); /* Градієнтний фон у ніжних рожево-бузкових відтінках */
+    color: #4a004e; /* Темно-пурпурний для контрастного тексту */
+}
+
+.form-container, .admin-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 2px solid #e48ac6; /* Ніжно-рожевий акцент */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(176, 3, 110, 0.2); /* Більш виражена тінь для глибини */
+    background: linear-gradient(135deg, #fde2f3, #f4bcdd); /* Градієнтний фон форми */
+    transition: transform 0.3s ease;
+}
+
+/* Ефект при наведенні */
+.form-container:hover, .admin-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Бантик у верхньому правому кутку */
+.form-container::before,
+.admin-container::before {
+    content: '🎀';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 2.5rem;
+    color: #ff69b4; /* Яскраво-рожевий бантик */
+    transform: rotate(45deg);
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+}
+
+input, select, button {
+    width: 100%;
+    margin: 12px 0;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 1px solid #a45da4; /* Ніжно-пурпурний */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #7b1fa2;
+    box-shadow: 0 0 5px #7b1fa2;
+}
+
+input, select {
+    background-color: #f7e6f7; /* Ніжно-бузковий для полів вводу */
+    color: #4a004e;
+}
+
+button {
+    background: linear-gradient(135deg, #d63384, #7b1fa2); /* Градієнтний рожево-фіолетовий фон */
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(123, 31, 162, 0.4);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c2185b, #6a1b9a);
+    transform: translateY(-3px);
+}
+
+.gender, .agreement {
+    margin: 10px 0;
+    color: #4a004e; /* Темно-пурпурний */
+}
+
+.gender label, .agreement label {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.gender label:hover, .agreement label:hover {
+    color: #c2185b;
+}
+
+/* Додаткові декоративні елементи */
+.form-container::after,
+.admin-container::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #f48fb1, transparent);
+    border-radius: 50%;
+    opacity: 0.6;
+}

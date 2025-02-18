@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація клієнта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Реєстрація клієнта</h2>
+        <form id="registerForm" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Ім'я та Прізвище" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="password" name="confirmPassword" placeholder="Підтвердження пароля" required>
+            <input type="tel" name="phone" placeholder="Номер телефону" required>
+            <input type="date" name="dob" placeholder="Дата народження" required>
+
+            <div class="gender">
+                <label><input type="radio" name="gender" value="male" required> Чоловік</label>
+                <label><input type="radio" name="gender" value="female"> Жінка</label>
+            </div>
+
+            <select name="country" required>
+                <option value="">Оберіть країну</option>
+                <option value="Україна">Україна</option>
+                <option value="Польща">Польща</option>
+                <option value="Німеччина">Німеччина</option>
+            </select>
+
+            <div class="agreement">
+                <label><input type="checkbox" name="agreement" required> Я погоджуюся з обробкою даних</label>
+            </div>
+
+            <input type="file" name="photo" accept="image/*" required>
+
+            <input type="text" name="result_test" placeholder="Результат тесту (для лаб. 2)">
+            <input type="text" name="result_game" placeholder="Результат гри (для лаб. 3)">
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
